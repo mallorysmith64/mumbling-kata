@@ -1,0 +1,58 @@
+{
+  "format": 1,
+  "restore": {
+    "/Users/marsother/Desktop/SDG/mumbling-kata/mumbling-kata.csproj": {}
+  },
+  "projects": {
+    "/Users/marsother/Desktop/SDG/mumbling-kata/mumbling-kata.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/Users/marsother/Desktop/SDG/mumbling-kata/mumbling-kata.csproj",
+        "projectName": "mumbling-kata",
+        "projectPath": "/Users/marsother/Desktop/SDG/mumbling-kata/mumbling-kata.csproj",
+        "packagesPath": "/Users/marsother/.nuget/packages/",
+        "outputPath": "/Users/marsother/Desktop/SDG/mumbling-kata/obj/",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "/Users/marsother/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
