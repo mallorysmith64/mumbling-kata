@@ -5,24 +5,22 @@ namespace mumbling_kata
 {
   public class Accumul
   {
-    public static String Accum(string s)
+    public String Accum(string s)
     {
-      //made variable
-      var result = s.Split("").Select((letter, index) =>
-      {
-        //return variable as uppercase then lowercase letters and then repeat that
-        return letter.ToUpperCase() + letter.ToLowerCase()
-        .Enumerable.repeat(index);
-        //add hyphen between letters when repeating letters is done
-      }); 'string.Join(string, params s[])';
-      //   string.Join("-");
-
-      Console.WriteLine(result);
-      return result;
+      return string.Join("-",
+                  s.Select((a, b) => ToUpper(s.ToCharArray()[b]) + ToLower(s.ToCharArray()[b], b)).ToList());
+    }
+    private static string ToLower(char accumChar, int repeat)
+    {
+      return new string(char.ToLower(accumChar), repeat);
+    }
+    private static string ToUpper(char accumChar)
+    {
+      return accumChar.ToString().ToUpper();
+    }
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");
     }
   }
-}
-static void Main(string[] args)
-{
-  Console.WriteLine("Hello World!");
 }
